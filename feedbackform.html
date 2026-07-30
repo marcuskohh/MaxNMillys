@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+<nav class="navbar">
+
+    <div class="logo">
+        <img src="C:\Users\marcu\feedback\Logo.png" alt="Logo">
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="NOTDONEYET">Home</a></li>
+        <li><a href="NOTDONEYET">Products</a></li>
+        <li><a href="NOTDONEYET">About Us</a></li>
+        <li><a href="NOTDONEYET">Contact Us</a></li>
+        <li><a href="NOTDONEYET">Feedback</a></li>
+    </ul>
+
+</nav>
+  <main>
+    <section class="form-container">
+      <header class="form-header">
+        <h1>Feedback Form</h1>
+      </header>
+
+      <form action="thankyou.html" method="get">
+        <div class="row">
+       <div>
+        <p for="email">Email address:</p>
+        <input type="email" id="email" name="email" placeholder="e.g.example@gmail.com" />
+       </div>
+
+       <div>
+        <p for="contact">Contact number:</p>
+        <input type="text" id="contact" name="contact" placeholder="e.g.82927743" />
+       </div>
+       </div>
+
+        <p for="shopped">Have you shopped with us before:</p>
+        <select id="shopped" name="shopped">
+          <option value="" disabled selected>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <p for="experience">If yes, describe your experience:</p>
+        <textarea id="experience" name="experience" rows="4" placeholder="e.g. Service was great, employees were very nice"></textarea>
+
+        <p for="improve">How we can improve:</p>
+        <textarea id="improve" name="improve" rows="4" placeholder="e.g. More seasoning on fries, more staff at specific outlets, ideas for new menu items in the future"></textarea>
+
+        <p for="rating">Rate your experience:</p>
+        <input type="range" id="rating" name="rating" min="1" max="10" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <h3>Max'n'Milly's</h3>
+
+    <p>Serving happiness, one bite at a time.</p>
+
+    <p>Opening Hours:</p>
+    <p>Mon - Sun: 10:00 AM - 10:00 PM</p>
+
+    <p>2026 Max'n'Milly's. All rights reserved.</p>
+</footer>
+</body>
+</html>
