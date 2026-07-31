@@ -140,8 +140,8 @@ footer {
 .gallery-item.unique-first-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;        /* stretches/crops the image to fill the box exactly */
-    display: block;
+    object-fit: contain;   /* shows the full image, unstretched, with empty space if needed */
+    background-color: #d9d9d9;  /* fills empty space with the gray you already use */
 }
 .gallery-item.unique-first-image img {
     max-width: none;
