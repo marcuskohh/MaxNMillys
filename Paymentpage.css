@@ -133,6 +133,7 @@ footer {
     color: white;
     text-align: center;
     padding: 30px;
+    margin-top: 50px;
 }
 @media (max-width: 768px) {
   .navbar {
