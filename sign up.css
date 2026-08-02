@@ -39,83 +39,68 @@ body {
     transition: 0.3s;
 }
 
-.form-container {
-  width: 620px;
-  margin: 36px auto;
-  border: 1px solid #666;
-  background-color: #fadec6;
-  box-shadow: 0 2px 12px rgba(0, 0.5, 0.5, 0.5);
+.container{
+    width:700px;
+    margin:30px auto;
+    background:white;
+    border:1px solid grey;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
 }
 
-.form-header {
-  padding: 14px 0;
-  text-align: center;
-  background: #f6a66a;
+.header{
+    background:#f8a25f;
+    padding:25px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 50px;
-  color: #444;
+.header h1{
+    text-align:center;
+    font-size:60px;
+    color:#3d3d3d;
+    font-weight:bold;
 }
 
-form {
-  width: 520px;
-  margin: 0 auto;
-  padding: 20px 0;
-  text-align: center;
+form{
+    padding:40px 80px;
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
+label{
+    display:block;
+    text-align:center;
+    font-size:22px;
+    margin-top:25px;
+    margin-bottom:10px;
+    color:#333;
 }
 
-.row div {
-  width: 250px;
+input{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    border:1px solid #666;
+    border-radius:2px;
+    outline:none;
 }
 
-p {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 20px;
+input:focus{
+    border:2px solid #f8a25f;
 }
 
-input,
-select,
-textarea {
-  width: 100%;
-  margin-bottom: 12px;
-  box-sizing: border-box;
-  border: 1px solid #666;
-  font-size: 18px;
-  color: #555;
+button{
+    display:block;
+    margin:40px auto 0;
+    width:260px;
+    padding:15px;
+    background:#4b4b4b;
+    color:white;
+    border:none;
+    border-radius:6px;
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-input,
-select {
-  height: 28px;
-}
-
-textarea {
-  resize: none;
-  padding: 4px 6px;
-}
-
-input[type="range"] {
-  width: 220px;
-  margin-bottom: 20px;
-}
-
-button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 34px;
-  border: none;
-  border-radius: 8px;
-  color: #777;
-  font-size: 18px;
-  font-weight: bold;
+button:hover{
+    background:#333;
 }
 footer {
     background-color: #222;
