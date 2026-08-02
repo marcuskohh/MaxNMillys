@@ -128,25 +128,25 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
-.gallery-item.unique-first-image {
-    width: 320px;          /* narrower, portrait-friendly width */
-    height: auto;          /* let content define height instead of forcing 220px */
+.gallery-together {
+    width: 320px;          
+    height: auto;         
     background-color: #d9d9d9;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-.gallery-item.unique-first-image img {
+.gallery-together img {
     width: 100%;
-    height: auto;           /* image keeps its natural portrait aspect ratio */
+    height: auto;           
     display: block;
-    object-fit: cover;      /* optional: only kicks in if you later cap height */
+    object-fit: cover;      
 }
 
-.gallery-item.unique-first-image .gallery-caption {
+.gallery-together .gallery-caption {
     width: 100%;
-    background-color: #e2734a;   /* your orange */
+    background-color: #e2734a;   
     padding: 20px;
     box-sizing: border-box;
 }
