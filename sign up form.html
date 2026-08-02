@@ -10,16 +10,55 @@
   <nav class="navbar">
 
     <div class="logo">
-        <img src="images/Logo.png" alt="Logo">
+        <img src="img/Logo.png" alt="Logo">
     </div>
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Feedback</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Products</a></li>
+        <li><a href="Aboutus.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="feedbackform.html">Feedback</a></li>
     </ul>
 </nav>
+  <main>
+    <section class="form-container">
+      <header class="form-header">
+        <h1>Feedback Form</h1>
+      </header>
+
+      <form action="thankyouf.html" method="get">
+        <div class="row">
+       <div>
+        <p for="email">Email address:</p>
+        <input type="email" id="email" name="email" placeholder="e.g.example@gmail.com" />
+       </div>
+
+       <div>
+        <p for="contact">Contact number:</p>
+        <input type="text" id="contact" name="contact" placeholder="e.g.82927743" />
+       </div>
+       </div>
+
+        <p for="shopped">Have you shopped with us before:</p>
+        <select id="shopped" name="shopped">
+          <option value="" disabled selected>Select an option</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+
+        <p for="experience">If yes, describe your experience:</p>
+        <textarea id="experience" name="experience" rows="4" placeholder="e.g. Service was great, employees were very nice"></textarea>
+
+        <p for="improve">How we can improve:</p>
+        <textarea id="improve" name="improve" rows="4" placeholder="e.g. More seasoning on fries, more staff at specific outlets, ideas for new menu items in the future"></textarea>
+
+        <p for="rating">Rate your experience:</p>
+        <input type="range" id="rating" name="rating" min="1" max="10" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
 </body>
 </html>
