@@ -116,3 +116,34 @@ footer {
     padding: 30px;
 }
 
+@media (max-width: 768px) {
+
+  .navbar{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .form-container{
+    width: 90%;
+  }
+
+  form{
+    width: 90%;
+  }
+
+  h1{
+    font-size: 35px;
+  }
+
+  button{
+    width: 100%;
+  }
+
+}
