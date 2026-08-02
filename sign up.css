@@ -94,13 +94,11 @@ input:focus{
 }
 
 button{
-    display:block;
     margin:40px auto 0;
     width:260px;
     padding:15px;
     background:#4b4b4b;
     color:white;
-    border:none;
     border-radius:6px;
     font-size:20px;
     cursor:pointer;
@@ -110,6 +108,7 @@ button{
 button:hover{
     background:#333;
 }
+
 footer {
     background-color: #222;
     color: white;
