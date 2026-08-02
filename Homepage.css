@@ -198,3 +198,34 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+
+  .navbar{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .products{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    width: 90%;
+  }
+
+  .friends-text,
+  .text-on-image{
+    font-size: 30px;
+    text-align: center;
+  }
+
+}
