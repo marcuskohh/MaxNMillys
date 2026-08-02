@@ -198,10 +198,3 @@ footer {
     padding: 30px;
     margin-top: 50px;
 }
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 20px;
-    gap: 10px;
-  }
