@@ -79,7 +79,7 @@ body {
     text-align: center;
 }
 
-.col p:last-child {
+.col p: .finisher {
     margin-bottom: 0;
 }
 
