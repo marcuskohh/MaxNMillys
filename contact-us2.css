@@ -47,20 +47,32 @@ main {
     padding: 50px 20px 80px;
 }
 
-.top-grid {
+main p {
+    font-size: 24px;
+    line-height: 1.4;
+    color: black;
+}
+
+.top-grid,
+.lower-grid,
+.gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.top-grid {
     gap: 40px;
     align-items: stretch;
 }
 
 .lower-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 60px;
 }
 
+.gallery {
+    gap: 20px;
+}
 
 .contact-panel {
     background-color: #f6a66a;
@@ -140,13 +152,6 @@ main {
     line-height: 1.5;
 }
 
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .gallery-tile {
     background-color: transparent;   
     border-radius: 10px;
@@ -167,6 +172,7 @@ main {
     border-radius: 10px;
     margin: 0 auto;
 }
+
 @media (max-width: 768px) {
 
   .navbar{
@@ -181,11 +187,6 @@ main {
     text-align: center;
   }
 
-main p {
-    font-size: 24px;
-    line-height: 1.4;
-    color: black;
-}
 
 footer {
     background-color: #222;
