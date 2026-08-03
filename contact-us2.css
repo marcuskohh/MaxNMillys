@@ -167,23 +167,19 @@ main {
     border-radius: 10px;
     margin: 0 auto;
 }
-
 @media (max-width: 768px) {
-    .navbar {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
 
-    .top-grid,
-    .lower-grid,
-    .gallery {
-        grid-template-columns: 1fr;
-    }
+  .navbar{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
 
-    .media-main {
-        min-height: 220px;
-    }
-}
+  .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
 
 main p {
     font-size: 24px;
