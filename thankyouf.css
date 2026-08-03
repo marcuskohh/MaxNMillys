@@ -88,9 +88,15 @@ footer {
     margin-top: 50px;
 }
 @media (max-width: 768px) {
-  .navbar {
+
+  .navbar{
     flex-direction: column;
     height: auto;
-    padding: 10px 20px;
-    gap: 10px;
+    padding: 20px;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
   }
