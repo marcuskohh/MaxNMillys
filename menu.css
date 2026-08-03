@@ -106,13 +106,6 @@ body {
   padding: 20px;
 }
 
-.products {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  gap: 50px;
-}
-
 .card {
   text-align: center;
   border-radius: 20px;
