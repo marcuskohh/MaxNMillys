@@ -1,51 +1,51 @@
+/* ===================== BASE ===================== */
 body {
-    margin: 0;
-    background-color: #fff8f2;
-    font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+background-color: #fff8f2;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===================== NAVBAR ===================== */
 .navbar {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #f6a66a;
+height: 50px;
+display: flex; /* makes the things in a row */
+justify-content: space-between; /* logo on left, links on right */
+align-items: center;
+padding: 15px 50px;
+background-color: #f6a66a; /* navbar orange */
 }
 
 .logo img {
-    height: 120px;
-    width: auto;
-    position: relative;
-    top: 5px;
-    right: 25px;
+height: 120px; /* makes the logo fit perfectly on the nav bar*/
+width: auto;
+position: relative;
+top: 5px;
+right: 25px; /* nudges logo slightly left */
 }
 
 
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-
-    margin: 0;
-    padding: 0;
+display: flex;
+list-style: none; /* remove bullet points */
+gap: 40px; /* spacing between nav items */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    font-weight: 600;
-    transition: 0.3s;
+text-decoration: none; /* removes link line */
+color: #333;
+font-size: 24px;
+font-weight: 600;
+transition: 0.3s; /* smooth hover color change */
 }
 
 .nav-links a:hover {
-    color: white;
+color: white; /* changes color to white */
 }
 
+/* ===================== FORM CARD ===================== */
 .form-container {
-  width: 620px;
+  width: 620px; /* fixed width box centered on page */
   margin: 36px auto;
   border: 1px solid #666;
   background-color: #fadec6;
@@ -55,7 +55,7 @@ body {
 .form-header {
   padding: 14px 0;
   text-align: center;
-  background: #f6a66a;
+  background: #f6a66a; /* orange header bar above the form title */
 }
 
 h1 {
@@ -65,14 +65,15 @@ h1 {
 }
 
 form {
-  width: 520px;
+  width: 520px; /* slightly narrower than .form-container so there's visible padding on the sides */
   margin: 0 auto;
   padding: 20px 0;
   text-align: center;
 }
 
+/* ===================== FORM FIELDS ===================== */
 label{
-    display:block;
+    display:block; /* forces each label onto its own line */
     text-align:center;
     font-size:22px;
     margin-top:25px;
@@ -81,34 +82,36 @@ label{
 }
 
 input{
-    width:100%;
+    width:100%; /* fills the .form width */
     padding:12px;
     font-size:18px;
     border:1px solid #666;
     border-radius:2px;
-    outline:none;
+    outline:none; /* removes default browser focus outline (replaced by custom border below) */
 }
 
 input:focus{
-    border:2px solid #f8a25f;
+    border:2px solid #f8a25f; /* custom focus indicator */
 }
 
+/* ===================== SUBMIT BUTTON ===================== */
 button{
     margin:40px auto 0;
     width:260px;
     padding:15px;
     background:#4b4b4b;
     color:white;
-    border-radius:6px;
+    border-radius:6px; /* smoothens the edges to make it look like a button */
     font-size:20px;
-    cursor:pointer;
-    transition:0.3s;
+    cursor:pointer; /* when hovered over, the cursor will change to a pointer */
+    transition:0.3s; /* makes the color change smoother */
 }
 
 button:hover{
-    background:#333;
+    background:#333; /* when hovered button color will change */
 }
 
+/* ===================== FOOTER ===================== */
 footer {
     background-color: #222;
     color: white;
@@ -116,6 +119,8 @@ footer {
     padding: 30px;
 }
 
+/* ===================== RESPONSIVE / MOBILE STYLES ===================== */
+/* Applies when viewport width is 768px or narrower (tablets/phones) */
 @media (max-width: 768px) {
 
   .navbar{
@@ -131,7 +136,7 @@ footer {
   }
 
   .form-container{
-    width: 90%;
+    width: 90%; /* fixed 620px becomes fluid on small screens */
   }
 
   form{
@@ -139,7 +144,7 @@ footer {
   }
 
   h1{
-    font-size: 35px;
+    font-size: 35px; /* shrink heading to fit smaller screens */
   }
 
 }
