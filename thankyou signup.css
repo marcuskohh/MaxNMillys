@@ -1,77 +1,81 @@
+/* ===================== BASE ===================== */
 body {
-    margin: 0;
-    background-color: #fff8f2;
-    font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+background-color: #fff8f2;
+font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===================== NAVBAR ===================== */
 .navbar {
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #f6a66a;
+height: 50px;
+display: flex; /* makes the things in a row */
+justify-content: space-between; /* logo on left, links on right */
+align-items: center;
+padding: 15px 50px;
+background-color: #f6a66a; /* navbar orange */
 }
 
 .logo img {
-    height: 120px;
-    width: auto;
-    position: relative;
-    top: 5px;
-    right: 25px;
+height: 120px; /* makes the logo fit perfectly on the nav bar*/
+width: auto;
+position: relative;
+top: 5px;
+right: 25px; /* nudges logo slightly left */
 }
 
 
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 40px;
+display: flex;
+list-style: none; /* remove bullet points */
+gap: 40px; /* spacing between nav items */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    font-weight: 600;
-    transition: 0.3s;
+text-decoration: none; /* removes link line */
+color: #333;
+font-size: 24px;
+font-weight: 600;
+transition: 0.3s; /* smooth hover color change */
 }
 
 .nav-links a:hover {
-    color: white;
+color: white;
 }
 
+/* ===================== CONFIRMATION MESSAGE BOX ===================== */
 .container{
-    width:900px;
+    width:900px; /* fixed-width centered card */
     margin:70px auto 40px;
     background:#ffd0a3;
-    border:1px solid #666;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);
-    text-align:center;
+    border:1px solid #666; /* border outline */
+    box-shadow:0 5px 15px rgba(0,0,0,0.2); /* adds a shadow behind the thank you card*/
+    text-align:center; /* centralises texts */
     padding:60px 70px;
 }
 
 .container h1{
-    font-size:64px;
+    font-size:64px; /* large "Thank you" headline */
     color:#3d3d3d;
-    margin-top: 10px;
-    margin-bottom:40px;
+    margin-top: 10px; /* makes the header closer to the top*/
+    margin-bottom:40px; /* makes the header abit further from the below text */
 }
 
 .container p{
     font-size:24px;
     color:#333;
-    line-height:1.8;
+    line-height:1.8; /* extra line spacing for readability */
 }
 
 .container a{
     color:blue;
-    text-decoration:underline;
+    text-decoration:underline; /* standard link styling for the phone number link */
 }
 
+/* ===================== "BACK HOME" BUTTON ===================== */
 .button-container{
-    text-align:center;
-    margin-bottom:60px;
+    text-align:center; /* makes text inside the button centralised */
+    margin-bottom:60px; /* makes the button 60px away from the footer below  */
 }
 
 button{
@@ -80,17 +84,18 @@ button{
     background:#4a4a4a;
     color:white;
     border:none;
-    border-radius:8px;
+    border-radius:8px; /* smoothen outs the edges of the button */
     font-size:22px;
     font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
+    cursor:pointer; /* when hovered over the cursor will change to a pointer indicating that it cna be pressed on*/
+    transition: 0.3s; /* smoothly changed the color*/
 }
 
 button:hover{
-    background:#333;
+    background:#333; /* changes the color of the button */
 }
 
+/* ===================== FOOTER ===================== */
 footer {
     background-color: #222;
     color: white;
@@ -99,6 +104,8 @@ footer {
     margin-top: 50px;
 }
 
+/* ===================== RESPONSIVE / MOBILE STYLES ===================== */
+/* Applies when viewport width is 768px or narrower (tablets/phones) */
 @media (max-width: 768px) {
 
   .navbar{
@@ -114,16 +121,16 @@ footer {
   }
 
   .container{
-    width: 90%;
+    width: 90%; /* makes the container width 90% of the mobile screen */
     padding: 30px;
   }
 
   .container h1{
-    font-size: 35px;
+    font-size: 35px; /* shrink big headline for mobile */
   }
 
   .container p{
-    font-size: 18px;
+    font-size: 18px; /* shrink the words for mobile */
   }
 
 }
