@@ -1,9 +1,11 @@
+ /* Name: Ng yu hen cody    Admission number:261086Q */
 body {
     margin: 0;
     background-color: #fff8f2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* navbar styling - logo left, links right */
 .navbar {
     height: 50px;
     display: flex;
@@ -42,6 +44,7 @@ body {
     color: white;
 }
 
+/* keeps the page content centered and not too wide */
 main {
     max-width: 1250px;
     margin: 0 auto;
@@ -54,6 +57,7 @@ main p {
     color: black;
 }
 
+/* the 3 main 2-column layouts on the page */
 .top-grid,
 .lower-grid,
 .gallery {
@@ -75,6 +79,7 @@ main p {
     gap: 20px;
 }
 
+/* orange box on the left of top-grid, holds the contact info */
 .contact-panel {
     background-color: #f6a66a;
     border-radius: 10px;
@@ -103,6 +108,7 @@ main p {
     color: #4d2c15;
 }
 
+/* white card sitting inside the contact panel, lists email/phone/address */
 .card {
     background-color: #ffffff;
     border-radius: 8px;
@@ -120,6 +126,8 @@ main p {
     border-bottom: none;
 
 }
+
+/* right side of top-grid, wraps the google map iframe */
 .media-main {
     background-color: #e6e6e6;
     border-radius: 10px;
@@ -131,7 +139,7 @@ main p {
     font-size: 18px;
 }
 
-
+/* faq section on the left of lower-grid */
 .faq h2 {
     font-size: 22px;
     margin-bottom: 20px;
@@ -153,6 +161,7 @@ main p {
     line-height: 1.5;
 }
 
+/* gallery tiles on the right of lower-grid, holds the 2 images */
 .gallery-tile {
     background-color: transparent;   
     border-radius: 10px;
@@ -174,6 +183,7 @@ main p {
     margin: 0 auto;
 }
 
+/* shrinks the navbar down to a stacked layout on smaller screens */
 @media (max-width: 768px) {
 
   .navbar{
@@ -189,6 +199,7 @@ main p {
   }
 }                             
 
+/* footer at the very bottom of the page */
 footer {
     background-color: #222;
     color: white;
