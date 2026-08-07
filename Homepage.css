@@ -1,52 +1,55 @@
+/* ===================== BASE ===================== */
 body {
     margin: 0;
     background-color: #fff8f2;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===================== NAVBAR ===================== */
 .navbar {
     height: 50px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* makes the things in a row */
+    justify-content: space-between; /* logo on left, links on right */
     align-items: center;
     padding: 15px 50px;
-    background-color: #f6a66a;
+    background-color: #f6a66a; /* navbar orange */
 }
 
 .logo img {
-    height: 120px;
+    height: 120px; /* makes the logo fit perfectly on the nav bar*/
     width: auto;
     position: relative;
     top: 5px;
-    right: 25px;
+    right: 25px; /* nudges logo slightly left */
 }
 
 
 
 .nav-links {
     display: flex;
-    list-style: none;
-    gap: 40px;
+    list-style: none; /* remove bullet points */
+    gap: 40px; /* spacing between nav items */
 }
 
 .nav-links a {
-    text-decoration: none;
+    text-decoration: none; /* removes link line */
     color: #333;
     font-size: 24px;
     font-weight: 600;
-    transition: 0.3s;
+    transition: 0.3s; /* smooth hover color change */
 }
 
 .nav-links a:hover {
-    color: white;
+    color: white; 
 }
 
+/* ===================== PROMO STRIP ===================== */
 .promo-strip {
   background-color: #2c2c2a;
   color: #f1efe8;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* ensures that the text is centered */
+  justify-content: center; /* ensures that the text is centered */
   gap: 10px;
   padding: 10px 16px;
   font-size: 18px;
@@ -59,25 +62,26 @@ body {
   color: #412402;
   font-size: 12px;
   padding: 4px 12px;
-  border-radius: 12px;
+  border-radius: 12px; /* pill-shaped button */
   text-decoration: none;
-  white-space: nowrap;
+  white-space: nowrap; /* keep "Sign up" on one line */
 }
 
 .promo-button:hover {
   opacity: 0.85;
 }
 
+/* ===================== FRIENDS BANNER ===================== */
 .friends-container {
-    position: relative;
+    position: relative; /* anchor for absolutely-positioned text */
     width: 90%;
-    margin: 40px auto;
+    margin: 40px auto; /* centers block horizontally */
 }
 
 .friends-img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: cover; /* crop image to fill box without distortion */
 }
 
 .friends-text {
@@ -85,15 +89,16 @@ body {
     top: 50%;
     left: 50px;
 
-    transform: translateY(-50%);
+    transform: translateY(-50%); /* vertically centers text over image */
 
     font-size: 40px;
     font-weight: bold;
     color: white;
 
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 2px 2px 5px black; /* makes it easier to read */
 }
 
+/* ===================== BEST SELLERS SECTION ===================== */
 .best-seller-title {
     text-align: center;
     font-size: 42px;
@@ -102,16 +107,16 @@ body {
 
 .products {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* even spacing between the 3 cards */
     gap: 50px;
 }
 
 .card {
     width: 400px;
     text-align: center;
-    border-radius: 20px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    transition: 0.3s;
+    border-radius: 20px; /* softens the endges on the card */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* adds a shadow on the card */
+    transition: 0.3s; /* smooth hover lift */
 }
 
 .card img {
@@ -132,16 +137,17 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px); /* card moves upwards abit on hover */
 }
 
+/* ===================== CALL-TO-ACTION BANNER ===================== */
 .centered-img {
   padding-top: 60px;
-  opacity: 0.5;
+  opacity: 0.5; /* faded so that text is readable */
 }
 
 .image-container {
-    position: relative;
+    position: relative; /* anchor for the absolutely-positioned text + button below */
     width: 100%;
 }
 
@@ -150,14 +156,14 @@ body {
     width: 90%;
     height: 500px;
     object-fit: cover;
-    margin: auto;
+    margin: auto; /* centers image within full-width container */
 }
 
 .text-on-image {
     position: absolute;
     top: 38%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* centers text both vertically and horizontally */
 
     color: rgb(0, 0, 0);
     font-size: 50px;
@@ -168,7 +174,7 @@ body {
   position:absolute;
   top: 53%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* centers button below the heading text */
 }
 
 .start-button {
@@ -177,7 +183,7 @@ body {
     background-color: #f6a66a;
     color: black;
     border: none;
-    border-radius:35px;
+    border-radius:35px; /* fully rounded pill button */
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
@@ -185,7 +191,7 @@ body {
 
 .start-button:hover{
     background-color: #ffb67a;
-    transform: scale(1.05);
+    transform: scale(1.05); /* slight grow effect on hover */
     transition: 0.3s;
 }
 
@@ -197,32 +203,33 @@ footer {
     margin-top: 50px;
 }
 
+/* ===================== FOOTER ===================== */
 @media (max-width: 768px) {
 
   .navbar{
-    flex-direction: column;
+    flex-direction: column; /* stack logo above nav links */
     height: auto;
     padding: 20px;
   }
 
   .nav-links{
-    flex-direction: column;
+    flex-direction: column; /* stack nav links vertically */
     gap: 15px;
     text-align: center;
   }
 
   .products{
-    flex-direction: column;
+    flex-direction: column; /* stack product cards vertically */
     align-items: center;
   }
 
   .card{
-    width: 90%;
+    width: 90%; /* cards take most of screen width */
   }
 
   .friends-text,
   .text-on-image{
-    font-size: 30px;
+    font-size: 30px; /* shrink large headline text on mobile */
     text-align: center;
   }
 
