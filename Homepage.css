@@ -195,6 +195,7 @@ body {
     transition: 0.3s;
 }
 
+/* ===================== FOOTER ===================== */
 footer {
     background-color: #222;
     color: white;
@@ -203,7 +204,6 @@ footer {
     margin-top: 50px;
 }
 
-/* ===================== FOOTER ===================== */
 @media (max-width: 768px) {
 
   .navbar{
