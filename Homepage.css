@@ -204,6 +204,8 @@ footer {
     margin-top: 50px;
 }
 
+/* ===================== RESPONSIVE / MOBILE STYLES ===================== */
+/* Applies when viewport width is 768px or smaller */
 @media (max-width: 768px) {
 
   .navbar{
