@@ -79,7 +79,7 @@ body {
     text-align: center;
 }
 
-.col p: .finisher {
+.col p .finisher {
     margin-bottom: 0;
 }
 
@@ -168,3 +168,4 @@ footer {
     gap: 15px;
     text-align: center;
   }
+}
